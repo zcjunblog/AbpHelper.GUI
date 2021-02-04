@@ -8,5 +8,7 @@
         //Add your menu items here...
 
         public const string AbpCli = Prefix + ".AbpCli";
+        public const string AbpHelperCli = Prefix + ".AbpHelperCli";
+        public const string ModulesManager = Prefix + ".ModulesManager";
     }
 }

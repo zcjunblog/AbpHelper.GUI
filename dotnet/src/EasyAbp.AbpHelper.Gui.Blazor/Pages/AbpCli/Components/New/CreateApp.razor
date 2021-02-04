@@ -5,7 +5,7 @@
 @inherits ExecutableComponentBase
 @inject AbpBlazorMessageLocalizerHelper<GuiResource> Lh
 
-<Card>
+<Card class="mb-4">
     <CardHeader>
         @* ************************* PAGE HEADER ************************* *@
         <Row Class="justify-content-between">
@@ -137,8 +137,7 @@
             <Field>
                 <Check TValue="bool" @bind-Checked="@Input.NoRandomPort">@L["NoRandomPort"]</Check>
             </Field>
-            
-            <SubmitButton Clicked="@ExecuteAsync" />
+            <SubmitButton Block="true" Clicked="@ExecuteAsync" />
         </Form>
     </CardBody>
 </Card>

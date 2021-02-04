@@ -9,5 +9,9 @@ namespace EasyAbp.AbpHelper.Gui.Services.AbpCli.New
     public interface IAbpCliNewService : IRemoteService
     {
         Task<ServiceExecutionResult> CreateAppAsync(AbpNewAppInput input);
+
+        Task<ServiceExecutionResult> CreateModuleAsync(AbpNewModuleInput input);
+
+        Task<ServiceExecutionResult> CreateConsoleAsync(AbpNewConsoleInput input);
     }
 }

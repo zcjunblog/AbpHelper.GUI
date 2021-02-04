@@ -51,6 +51,19 @@ namespace EasyAbp.AbpHelper.Gui.Blazor.Menus
                 )
             );
 
+            context.Menu.Items.Add(new ApplicationMenuItem(
+                    GuiMenus.AbpHelperCli,
+                    l["Menu:AbpHelperCli"],
+                    "/AbpHelperCli"
+                )
+            );
+
+            context.Menu.Items.Add(new ApplicationMenuItem(
+                    GuiMenus.ModulesManager,
+                    l["Menu:ModulesManager"],
+                    "/ModulesManager"
+                )
+            );
             return Task.CompletedTask;
         }
 

@@ -1,5 +1,65 @@
 ﻿@page "/AbpCli"
 @using Volo.Abp.MultiTenancy
 @using EasyAbp.AbpHelper.Gui.Blazor.Pages.AbpCli.Components.New
+@inherits GuiComponentBase
 
-<CreateApp></CreateApp>
+<Tabs Pills="true" SelectedTab="GenerateSolution" TabPosition="TabPosition.Left">
+    <Items>
+        <Tab Name="InstallAbpCLI">Install Abp CLI</Tab>
+        <Tab Name="GenerateSolution">Generate a new Abp solution</Tab>
+        <Tab Name="UpdateModules">Update framework and modules</Tab>
+        <Tab Name="AddModules">Add an Abp package or module</Tab>
+        <Tab Name="GenerateAngular">Generate Angular client proxies</Tab>
+        <Tab Name="SwitchVersion">Switch the ABP framework version</Tab>
+        <Tab Name="TranslateFiles">Translate localization files</Tab>
+        <Tab Name="ManageYourAccount">Manage your Abp.io account</Tab>
+    </Items>
+    <Content>
+        <TabPanel Name="InstallAbpCLI">
+            <Tabs SelectedTab="Install">
+                <Items>
+                    <Tab Name="Install">@L["InstallAbpCLI"]</Tab>
+                    <Tab Name="Update">@L["UpdateAbpCLI"]</Tab>
+                    <Tab Name="Uninstall">@L["UninstallAbpCLI"]</Tab>
+                </Items>
+                <Content>
+                    <TabPanel Name="Install">
+                        Install Abp CLI
+                    </TabPanel>
+                    <TabPanel Name="Update">
+                        Update Abp CLI
+                    </TabPanel>
+                    <TabPanel Name="Uninstall">
+                        Uninstall Abp CLI
+                    </TabPanel>
+                </Content>
+            </Tabs>
+        </TabPanel>
+        <TabPanel Name="GenerateSolution">
+            <Tabs SelectedTab="CreateApp">
+                <Items>
+                    <Tab Name="CreateApp">@L["CreateApp"]</Tab>
+                    <Tab Name="CreateModule">@L["CreateModule"]</Tab>
+                    <Tab Name="CreateConsole">@L["CreateConsole"]</Tab>
+                </Items>
+                <Content>
+                    <TabPanel Name="CreateApp">
+                        <CreateApp></CreateApp>
+                    </TabPanel>
+                    <TabPanel Name="CreateModule">
+                        CreateModule
+                    </TabPanel>
+                    <TabPanel Name="CreateConsole">
+                        CreateConsole
+                    </TabPanel>
+                </Content>
+            </Tabs>
+        </TabPanel>
+        <TabPanel Name="UpdateModules">Update framework and modules</TabPanel>
+        <TabPanel Name="AddModules">Add an Abp package or module</TabPanel>
+        <TabPanel Name="GenerateAngular">GenerateAngular</TabPanel>
+        <TabPanel Name="SwitchVersion">SwitchVersion</TabPanel>
+        <TabPanel Name="TranslateFiles">TranslateFiles</TabPanel>
+        <TabPanel Name="ManageYourAccount">ManageYourAccount</TabPanel>
+    </Content>
+</Tabs>

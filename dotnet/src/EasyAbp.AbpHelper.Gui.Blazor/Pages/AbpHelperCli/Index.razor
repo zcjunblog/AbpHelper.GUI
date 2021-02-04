@@ -1,0 +1,42 @@
+﻿@page "/AbpHelperCli"
+@inherits GuiComponentBase
+
+<Tabs Pills="true" SelectedTab="InstallAbpHelperCLI" TabPosition="TabPosition.Left">
+    <Items>
+        <Tab Name="InstallAbpHelperCLI">Install AbpHelper CLI</Tab>
+        <Tab Name="InstallModules">Install community modules</Tab>
+        <Tab Name="GenerateCRUD">Generate CRUD</Tab>
+        <Tab Name="GenerateAppService">Generate appService</Tab>
+        <Tab Name="GenerateController">Generate controller</Tab>
+        <Tab Name="GenerateLocalization">Generate localization</Tab>
+        <Tab Name="AddMigrations">Add EF Migrations</Tab>
+    </Items>
+    <Content>
+        <TabPanel Name="InstallAbpHelperCLI">
+            <Tabs SelectedTab="Install">
+                <Items>
+                    <Tab Name="Install">@L["InstallAbpHelperCLI"]</Tab>
+                    <Tab Name="Update">@L["UpdateAbpHelperCLI"]</Tab>
+                    <Tab Name="Uninstall">@L["UninstallAbpHelperCLI"]</Tab>
+                </Items>
+                <Content>
+                    <TabPanel Name="Install">
+                        Install AbpHelper CLI
+                    </TabPanel>
+                    <TabPanel Name="Update">
+                        Update AbpHelper CLI
+                    </TabPanel>
+                    <TabPanel Name="Uninstall">
+                        Uninstall AbpHelper CLI
+                    </TabPanel>
+                </Content>
+            </Tabs>
+        </TabPanel>
+        <TabPanel Name="InstallModules">InstallModules</TabPanel>
+        <TabPanel Name="GenerateCRUD">GenerateCRUD</TabPanel>
+        <TabPanel Name="GenerateAppService">GenerateAppService</TabPanel>
+        <TabPanel Name="GenerateController">GenerateController</TabPanel>
+        <TabPanel Name="GenerateLocalization">GenerateLocalization</TabPanel>
+        <TabPanel Name="AddMigrations">AddMigrations</TabPanel>
+    </Content>
+</Tabs>
