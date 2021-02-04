@@ -24,4 +24,8 @@
     <ProjectReference Include="..\..\src\EasyAbp.AbpHelper.Gui.HttpApi.Client\EasyAbp.AbpHelper.Gui.HttpApi.Client.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Theme\MyMainLayout.razor" />
+  </ItemGroup>
+
 </Project>

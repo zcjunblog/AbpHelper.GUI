@@ -29,11 +29,11 @@
     </CardBody>
 </Card>
 
-<Button Block="true" Color="Color.Dark" Clicked="NavigateToCounterComponent">Get Started</Button>
+<Button Block="true" Color="Color.Dark" Clicked="OnGetStartedButtonClicked">Get Started</Button>
 
 @code
 {
-    private void NavigateToCounterComponent()
+    private void OnGetStartedButtonClicked()
     {
         NavigationManager.NavigateTo("/AbpCli");
     }

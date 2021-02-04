@@ -1,0 +1,22 @@
+/**
+ * @Created By zhaozc
+ * @date 2021/2/4
+ * @Description: 
+*/
+
+#main-navbar{
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.card.mb-4{
+    max-height: 800px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+#ApplicationContainer>.container{
+    padding-top: 90px;
+}
