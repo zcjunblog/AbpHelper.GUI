@@ -46,3 +46,21 @@
         -webkit-transform: scale(1.0);
     }
 }
+
+/*add your custom css here...*/
+#main-navbar{
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.card.mb-4{
+    max-height: 800px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+#ApplicationContainer>.container{
+    padding-top: 90px;
+}
